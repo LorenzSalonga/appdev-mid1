@@ -1,11 +1,11 @@
-// 1st step - Movement animation to happen
+// 1st step - Movement animation
  
-// I change document.querySelector $ sign para mapalitan ng jquery ang vanilla js para pamaiksi and code at para mag run.
+// I change document.querySelector $ sign para mapalitan ng jquery ang vanilla js para pamaiksi ang code at madaling gawin at tandaan.
 const card = $('.card');
 const container = $('.container');
  
  
-// same here i change addEventlistener I used "on" para sa jquery at para din mapaiksi and code at para madaling matandaan at maintindihan.
+// same here i change addEventlistener I used "on" para sa jquery at para din mapaiksi ang code at para madaling matandaan at maintindihan.
  
 container.on('mousemove', (e) => {
     let xAxis = (window.innerWidth / 2 - e.pageX) / 20; //rotating the element into x axis
@@ -15,13 +15,9 @@ container.on('mousemove', (e) => {
  
 // 4th step - Adding animation in
 container.mouseenter(function(e) {
-    card.css('transform', 'none');
+    card.css('transform', 'none');
  
-    // Popout animation for all items (consider using a class for reusability)
- 
-    // using the $ sign of jquery you dont need to call the classes you want to animate or change
-    // you can call them directly using the $ sign without declaring  variables first
-    // so i didn't use the 5th step
+    // gamit ang $ sign of jquery hindi mo na na kailangan tawagin ang classes para mag animate pwede ng idirect
  
     $('.photo img').css('transform', 'translateZ(50px)');
     $('.title').css('transform', 'translateZ(50px)');
@@ -30,7 +26,7 @@ container.mouseenter(function(e) {
     $('.profile').css('transform', 'translateZ(50px)');
   });
  
-// 3rd step - Removing animation in
+// 3rd step - Removing animation
  
 // i change the "addEventListener" into "on" using jquery
  
